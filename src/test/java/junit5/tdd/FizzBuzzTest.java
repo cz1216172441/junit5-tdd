@@ -22,4 +22,19 @@ public class FizzBuzzTest {
         assertEquals("1", actual);
     }
 
+    /**
+     * given 3
+     * when count off
+     * then fizz
+     */
+    @Test
+    void should_return_fizz_when_count_off_given_3() {
+        // given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        int inputNumber = 3;
+        // when
+        String actual = fizzBuzz.play(inputNumber);
+        // then
+        assertEquals("fizz", actual);
+    }
 }
