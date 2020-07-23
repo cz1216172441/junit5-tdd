@@ -101,4 +101,20 @@ public class FizzBuzzTest {
         // then
         assertEquals("FizzWhizz", actual);
     }
+
+    /**
+     * given 35
+     * when count off
+     * then BuzzWhizz
+     */
+    @Test
+    void should_return_buzzwhizz_when_count_off_given_35() {
+        // given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        int inputNumber = 35;
+        // when
+        String actual = fizzBuzz.play(inputNumber);
+        // then
+        assertEquals("BuzzWhizz", actual);
+    }
 }
