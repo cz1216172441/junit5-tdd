@@ -3,26 +3,18 @@ package junit5.tdd;
 public class FizzBuzz {
 
     public String play(int inputNumber) {
+        StringBuilder stringBuilder = new StringBuilder();
         if (inputNumber % 3 == 0) {
-            if (inputNumber % 5 == 0) {
-                if (inputNumber % 7 == 0) {
-                    return "FizzBuzzWhizz";
-                }
-                return "FizzBuzz";
-            }
-            if (inputNumber % 7 == 0) {
-                return "FizzWhizz";
-            }
-            return "Fizz";
+            stringBuilder.append("Fizz");
         }
         if (inputNumber % 5 == 0) {
-            if (inputNumber % 7 == 0) {
-                return "BuzzWhizz";
-            }
-            return "Buzz";
+            stringBuilder.append("Buzz");
         }
         if (inputNumber % 7 == 0) {
-            return "Whizz";
+            stringBuilder.append("Whizz");
+        }
+        if (!stringBuilder.toString().isEmpty()) {
+            return stringBuilder.toString();
         }
         return String.valueOf(inputNumber);
     }
