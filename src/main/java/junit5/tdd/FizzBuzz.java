@@ -13,6 +13,9 @@ public class FizzBuzz {
             return "Fizz";
         }
         if (inputNumber % 5 == 0) {
+            if (inputNumber % 7 == 0) {
+                return "BuzzWhizz";
+            }
             return "Buzz";
         }
         if (inputNumber % 7 == 0) {
