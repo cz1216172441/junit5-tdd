@@ -25,7 +25,7 @@ public class FizzBuzzTest {
     /**
      * given 3
      * when count off
-     * then fizz
+     * then Fizz
      */
     @Test
     void should_return_fizz_when_count_off_given_3() {
@@ -41,7 +41,7 @@ public class FizzBuzzTest {
     /**
      * given 5
      * when count off
-     * then buzz
+     * then Buzz
      */
     @Test
     void should_return_buzz_when_count_off_given_5() {
@@ -57,7 +57,7 @@ public class FizzBuzzTest {
     /**
      * given 15
      * when count off
-     * then fizzbuzz
+     * then FizzBuzz
      */
     @Test
     void should_return_fizzbuzz_when_count_off_given_15() {
@@ -73,7 +73,7 @@ public class FizzBuzzTest {
     /**
      * given 7
      * when count off
-     * then whizz
+     * then Whizz
      */
     @Test
     void should_return_whizz_when_count_off_given_7() {
@@ -84,5 +84,21 @@ public class FizzBuzzTest {
         String actual = fizzBuzz.play(inputNumber);
         // then
         assertEquals("Whizz", actual);
+    }
+
+    /**
+     * given 21
+     * when count off
+     * then FizzWhizz
+     */
+    @Test
+    void should_return_fizzwhizz_when_count_off_given_21() {
+        // given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        int inputNumber = 21;
+        // when
+        String actual = fizzBuzz.play(inputNumber);
+        // then
+        assertEquals("FizzWhizz", actual);
     }
 }
