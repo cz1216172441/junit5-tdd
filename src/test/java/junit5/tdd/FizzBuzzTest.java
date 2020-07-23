@@ -35,6 +35,6 @@ public class FizzBuzzTest {
         // when
         String actual = fizzBuzz.play(inputNumber);
         // then
-        assertEquals("fizz", actual);
+        assertEquals("Fizz", actual);
     }
 }
