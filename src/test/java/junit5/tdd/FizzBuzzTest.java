@@ -69,4 +69,20 @@ public class FizzBuzzTest {
         // then
         assertEquals("FizzBuzz", actual);
     }
+
+    /**
+     * given 7
+     * when count off
+     * then whizz
+     */
+    @Test
+    void should_return_whizz_when_count_off_given_7() {
+        // given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        int inputNumber = 7;
+        // when
+        String actual = fizzBuzz.play(inputNumber);
+        // then
+        assertEquals("Whizz", actual);
+    }
 }
